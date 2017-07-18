@@ -32,7 +32,7 @@ Above installation can also be simplify by using the following command:
 
     composer require "calhoun/eloquent-oft"
 
-Next, if your using a version of Laravel less than 5.5 you should add the
+Next, if you are using a version of Laravel less than 5.5 you should add the
 OTFServiceProvider to the providers
 array of your config/app.php
 configuration file:
