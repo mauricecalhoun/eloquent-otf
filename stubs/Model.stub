@@ -1,0 +1,28 @@
+<?php
+
+namespace Calhoun\OTF;
+
+use Illuminate\Database\Eloquent\Model;
+
+class {class} extends Model{
+  public $table = "{table}";
+  public $connection = "{connection}";
+
+  /**
+  * Get a relationship.
+  *
+  * @param  string  $key
+  * @return mixed
+  */
+  public function getRelationValue($key)
+  {
+      return (parent::getRelationValue($key)) ?: $this->getRelationshipFromMethod($key);
+  }
+
+  public function __call($method, $parameters)
+  {
+    $class_name = camel_case(class_basename($this));
+    $config = config(sprintf("relation.%s.%s", $class_name, $method));
+    return ( $config ) ? $config($this) : parent::__call($method, $parameters);
+  }
+}

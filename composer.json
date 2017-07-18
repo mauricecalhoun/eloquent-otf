@@ -1,0 +1,33 @@
+{
+    "name": "calhoun/eloquent-otf",
+    "keywords": ["php","laravel"],
+    "homepage": "https://github.com/mauricecalhoun/eloquent-otf",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Calhoun\\OTF\\": "app/"
+        },
+        "files": [
+          "app/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+      "classmap": [
+        "tests/TestingCase.php"
+      ],
+      "files": [
+      ]
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.4",
+        "phpunit/phpunit": "^6.2",
+        "mockery/mockery": "^0.9.9",
+        "fzaninotto/faker": "^1.6"
+    },
+    "authors": [
+        {
+            "name": "Maurice Calhoun",
+            "email": "mauricecalhoun@gmail.com"
+        }
+    ]
+}
