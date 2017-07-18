@@ -29,5 +29,12 @@
             "name": "Maurice Calhoun",
             "email": "mauricecalhoun@gmail.com"
         }
-    ]
+    ],
+    "extra" :{
+      "laravel" :{
+        "providers" :[
+          "Calhoun\\OTF\\OTFServiceProvider"
+        ]
+      }
+    }
 }
