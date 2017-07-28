@@ -19,7 +19,7 @@ To install through composer, simply put the following in your `composer.json` fi
 ```json
 {
     "require": {
-        "calhoun/eloquent-oft": "*"
+        "calhoun/eloquent-otf": "*"
     }
 }
 ```
@@ -30,7 +30,7 @@ And then run `composer install` from the terminal.
 
 Above installation can also be simplify by using the following command:
 
-    composer require "calhoun/eloquent-oft"
+    composer require "calhoun/eloquent-otf"
 
 Next, if you are using a version of Laravel less than 5.5 you should add the
 OTFServiceProvider to the providers
