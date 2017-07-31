@@ -10,7 +10,7 @@ class OTFServiceProvider extends ServiceProvider
   public function boot()
   {
     Collection::macro('eloquent', function($callback, $name = null) {
-        $name = is_null($name) ? 'oft' : $name;
+        $name = is_null($name) ? 'onTheFly' : $name;
         $results = eloquent($this->items, $callback, $name);
         if($results instanceof Collection) return new static($results->toArray());
         if(is_array($results)) return new static($results);
